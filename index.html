@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="window">
+        <div class="text">
+            <p class="heading">Book Library</p>
+            <p class="sub-title">This project is for understanding the concepts of <b>Javascript Object Constructors</b> and their functions</p>
+        </div>
+        <form action="">
+            <div class="inputs">
+                <div class="title input">
+                    <label for="book-title">Title</label>
+                    <input type="text" id="book-title">
+                </div>
+                
+                <div class="author input">
+                    <label for="book-author">Author</label>
+                    <input type="text" id="book-author">
+                </div>
+                    
+                <div class="pages input">
+                    <label for="book-pages">Pages</label>
+                    <input type="number" min="1" id="book-pages">
+                </div>
+
+                <div class="read input">
+                    <label for="book-read">Read</label>
+                    <input type="checkbox" id="book-read">
+                </div>
+            </div>
+            <button type="submit" id="submit-btn">Submit</button>
+        </form>
+
+        <ul id="book-list">
+
+        </ul>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

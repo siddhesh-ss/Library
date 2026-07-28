@@ -1,0 +1,33 @@
+.window {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.text > .heading {
+    font-size: large;
+    font-weight: bolder;
+}
+
+.inputs {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+form button {
+    margin: 1rem 0;
+    padding: .2rem .8rem;
+}
+
+#book-list li {
+    display: flex;
+    gap: 1rem;
+    flex: 1;
+}
