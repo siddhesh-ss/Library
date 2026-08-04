@@ -51,8 +51,8 @@ submitBtn.addEventListener("click", (e) => {
 
 tableBody.addEventListener("click", (e) => {
     let bookId = e.target.parentNode.parentNode.id;
-    if(e.target.id === "delete-btn") deleteBook(bookId);
-    else if(e.target.id === "read-btn") changeStatus(bookId);
+    if(e.target.id === "delete-btn-id") deleteBook(bookId);
+    else if(e.target.id === "read-btn-id") changeStatus(bookId);
 });
 
 function clearForm() {
@@ -97,14 +97,17 @@ function display() {
 
         const readTd = document.createElement("td");
         const readBtn = document.createElement("button");
+        readBtn.id = "read-btn-id";
         readBtn.className = `read-btn ${(book.isRead ? "read" : "not-read")}`
         readBtn.textContent = `${(book.isRead ? "Read" : "Not Read")}`;
         readTd.appendChild(readBtn);
 
         const deleteTd = document.createElement("td");
         const deleteBtn = document.createElement("button");
+        deleteBtn.id = "delete-btn-id";
         deleteBtn.className = "delete-btn";
         deleteBtn.textContent = "DELETE";
+        deleteTd.appendChild(deleteBtn);
 
         tr.append(titleTd,authorTd, pageTd, readTd, deleteTd);
         tableBody.prepend(tr);
