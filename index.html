@@ -11,6 +11,7 @@
         <div class="text" style="margin: 1rem 0 2rem 0;">
             <p class="heading">Book Library</p>
             <p class="sub-title">This project is for understanding the concepts of <b>Javascript Object Constructors</b> and their functions</p>
+            <p class="sub-title">Here is <a href="https://github.com/siddhesh-ss/Library"><i>Github link</i></a></p>
         </div>
         <div class="form-div">
             <form action="">
@@ -42,7 +43,18 @@
             </form>
         </div>
 
+        
         <div class="table-div">
+            <div class="sort">
+                <label for="sorting">Sort by:</label>
+                <select name="sorting" id="sorting">
+                    <option value="newest" selected>Newest First</option>
+                    <option value="oldest">Oldest First</option>
+                    <option value="pages-inc">Pages ascending</option>
+                    <option value="pages-dec">Pages descending</option>
+                    <option value="read-stat">Read books</option>
+                </select>
+            </div>
             <table>
                 <tr>
                     <th>Title</th>

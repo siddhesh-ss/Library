@@ -46,8 +46,8 @@ body {
 .text > .sub-title {
     text-align: center;
     color: var(--muted);
-    margin-top: .5rem;
-    margin-bottom: 2rem;  
+    margin: .5rem;
+    /* margin-bottom: 2rem;   */
 }
 
 
@@ -124,6 +124,8 @@ td {
 
     transition: .2s;
     width: 7rem;
+
+    font-size: 1rem;
 }
 
 #submit-btn:hover {
@@ -237,4 +239,13 @@ label {
     font-weight: 600;
 
     color: #4b5563;
+}
+
+.table-div {
+    position: relative;
+}
+
+.sort {
+    position: absolute;
+    right: -15rem;
 }
